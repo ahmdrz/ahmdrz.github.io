@@ -1,10 +1,10 @@
 body {
-  background-color: rgb(75, 45, 135);
+  background-color: rgb(59, 112, 150);
 }
 .center-box {
   margin-top: 2em;
   margin-bottom: 2em;
-  background-color: rgb(84, 51, 147);
+  background-color: rgb(49, 102, 140);
   box-shadow: 0px 0px 20px #333;
   padding : 20px;
   font-family: Open Sans;

@@ -45,6 +45,11 @@ body {
 .center-box h5 {
   font-weight: normal;
 }
+.line {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid rgb(75, 45, 135);
+}
 @media screen and (max-width:768px){
   .center-box {
     width:70%;

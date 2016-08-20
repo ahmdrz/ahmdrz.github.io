@@ -1,14 +1,20 @@
 body {
-  background-color: #333;
+  background-image: url('background.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .center-box {
+  margin:10px 0;
+  padding: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: #a0a0a0;
-  box-shadow: 0px 0px 20px #333;
-  padding : 20px;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 20px;
   font-family: Open Sans;
   font-size: 1em;
   text-align: center;
@@ -16,23 +22,37 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .center-box h1 {
   display: inline-block;
   font-family: Dancing Script;
   font-weight: bold;
   font-size: 3em;
   padding-bottom: 8px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #777;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0px 0px 7px #222;
+  font-weight: normal;
+}
+
+ h4, h5, h6 {
+  text-shadow: 0px 0px 7px #222;
+  color:white;
+}
+
 .center-box h4 a {
-  color:#ccc;
+  color: #ccc;
   opacity: 0.5;
   transition: all 0.5s ease-in-out;
 }
+
 .center-box h4 a:hover {
   opacity: 1.0;
-  color:rgb(184, 14, 14);
+  color: rgb(184, 14, 14);
 }
+
 .center-box img {
   display: block;
   margin-right: auto;
@@ -40,29 +60,41 @@ body {
   border-radius: 50% 50%;
   box-shadow: 0px 0px 20px #333 inset;
   width: 200px;
-  height:200px;
+  height: 200px;
 }
-.center-box h3 {
-  font-weight: normal;
-}
-.center-box h5 {
-  font-weight: normal;
-}
+
 .line {
   padding-right: 10px;
   padding-left: 10px;
   border-bottom: 1px solid rgb(75, 45, 135);
 }
-@media screen and (max-width:768px){
+
+@media screen and (max-width:768px) {
   .center-box {
-    width:70%;
+    width: 70%;
   }
   .center-box h1 {
     font-size: 2em;
   }
 }
+
 @media screen and (min-width:768px) {
   .center-box {
-    width:600px;
+    width: 600px;
   }
+}
+
+.img-copyright {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-shadow: 0px 0px 7px #222;
+  font-weight: normal;
+  color:white;
+}
+
+.img-copyright a {
+  color:white;
+  text-decoration: none;
 }

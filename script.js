@@ -1,0 +1,1 @@
+function getRandomColor(){for(var a="0123456789ABCDEF",b="#",c=0;c<6;c++)b+=a[Math.floor(16*Math.random())];return b}function changeColor(){document.getElementById("heading").setAttribute("style","border-bottom: 2px solid "+getRandomColor()+";"),setTimeout(changeColor,1e3)}setTimeout(changeColor,1e3);

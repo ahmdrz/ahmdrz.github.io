@@ -1,22 +1,26 @@
 html {
-  background: url('background.jpg') no-repeat center center fixed;   
+  background: url('background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-html{
- height:100%;
- min-height:100%;
+html {
+  height: 100%;
+  min-height: 100%;
 }
 
-body{
- min-height:100%;
+body {
+  margin: 0;
+  min-height: 100%;
 }
 
 .center-box {
-  margin:20px 0;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  margin: 20px 0;
   padding: 10px;
   background-color: transparent;
   padding: 20px;
@@ -26,6 +30,7 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transform: translate(-50%, -50%);
 }
 
 .center-box h1 {
@@ -38,13 +43,14 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: white;
   text-shadow: 0px 0px 7px #222;
   font-weight: normal;
 }
 
- h4, h5, h6 {
+h4, h5, h6 {
   text-shadow: 0px 0px 7px #222;
-  color:white;
+  color: white;
 }
 
 .center-box h4 a {
@@ -87,15 +93,4 @@ h1, h2, h3, h4, h5, h6 {
   .center-box {
     width: 600px;
   }
-}
-
-.img-copyright {  
-  text-shadow: 0px 0px 7px #222;
-  font-weight: normal;
-  color:white;
-}
-
-.img-copyright a {
-  color:white;
-  text-decoration: none;
 }

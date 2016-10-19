@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-    background: url(background-light.jpg) center center no-repeat fixed;
+    background: url(background-dark.jpg) center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,14 +28,14 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: url(background-dark.jpg) center center no-repeat fixed;
+    background: url(background-light.jpg) center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.center-box {    
+.center-box {
     top: 50%;
     left: 50%;
     position: absolute;
@@ -105,4 +105,31 @@ h1, h2, h3, h4, h5, h6 {
     .center-box {
         width: 600px
     }
+}
+
+#preloader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border-top: 5px solid #aaa;
+    border-right: 5px solid #aaa;
+    border-left: 5px solid #aaa;
+    border-bottom: 5px solid #ddd;    
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

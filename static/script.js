@@ -14,6 +14,7 @@ setTimeout(function () {
 }, 2e5);
 
 function start() {
+    document.getElementById("overlay").style.opacity = "0";
     document.getElementById("preloader").style.display = "none";
     document.getElementById("content").style.display = "block";
 }

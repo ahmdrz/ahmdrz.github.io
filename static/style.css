@@ -24,7 +24,9 @@ body {
     margin: 0
 }
 
-.overlay {
+#overlay {
+    transition: all 500ms ease-in-out;
+    opacity: 1.0;
     position: absolute;
     height: 100%;
     width: 100%;

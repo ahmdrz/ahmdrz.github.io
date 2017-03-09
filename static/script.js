@@ -11,11 +11,11 @@ function start() {
     setTimeout(changeColor, 1e3), document.getElementById("preloader").style.display = "none", document.getElementById("content").style.display = "block"
 }
 
-document.getElementById("background").style.height = window.innerHeight + "px";
+// document.getElementById("background").style.height = (window.innerHeight + 60) + "px";
 
-window.onresize = function() {
-    document.getElementById("background").style.height = window.innerHeight + "px";
-}
+// window.onresize = function() {
+//     document.getElementById("background").style.height = (window.innerHeight + 60) + "px";
+// }
 
 window.onload = function () {
         document.getElementById("content").style.height = window.innerHeight + "px", document.getElementById("content-resume").style.height = window.innerHeight + "px", setTimeout(function () {

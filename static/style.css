@@ -33,19 +33,18 @@ html {
     transition: all .5s ease-in-out
 }
 
-html {
-    background-color: #222;
+html {    
     /*background: url(background-dark.jpg) center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
-    background: url(background-dark.jpg) no-repeat center fixed;
-    background-size: cover;
     height: 100%
 }
 
 body {
+    background: url(background-dark.jpg) no-repeat center fixed;
+    background-size: cover;
     margin: 0
 }
 
@@ -124,6 +123,9 @@ h6 {
 }
 
 @media screen and (max-width:768px) {
+    #content-resume .container {
+        width:90%;
+    }
     .container {
         width: 70%
     }

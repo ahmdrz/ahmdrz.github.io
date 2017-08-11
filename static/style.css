@@ -6143,8 +6143,6 @@ body {
 }
 
 .center-box h1 {
-    border-bottom: 2px solid #777;
-    border-top: 2px solid #777;
     margin-bottom: 0;
     display: inline-block;
     font-family: Dancing Script;
@@ -6167,7 +6165,7 @@ h6 {
 
 .center-box h4 a {
     color: #ccc;
-    opacity: .5
+    opacity: 1
 }
 
 .center-box h4 a:hover {
@@ -6209,6 +6207,15 @@ h6 {
     }
 }
 
+@media screen and (max-width:400px) {
+    .center-box h1 {
+        font-size: 32px
+    }
+    .fa-3x {
+        font-size: 26px!important
+    }
+}
+
 @media screen and (min-width:768px) {
     .container {
         width: 600px
@@ -6221,10 +6228,10 @@ h6 {
     z-index: 1;
     margin: -75px 0 0 -75px;
     border-radius: 50%;
-    border-top: 5px solid #333;
-    border-right: 5px solid #444;
-    border-left: 5px solid #555;
-    border-bottom: 5px solid #777;
+    border-top: 5px solid rgba(190, 190, 190, 1);
+    border-right: 5px solid rgba(190, 190, 190, 0.75);
+    border-left: 5px solid rgba(190, 190, 190, 0.75);
+    border-bottom: 5px solid rgba(190, 190, 190, 0.75);
     width: 120px;
     height: 120px;
     -webkit-animation: spin 1.5s ease-in-out infinite;

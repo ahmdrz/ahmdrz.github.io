@@ -8,13 +8,13 @@ function changeColor() {
 }
 
 function start() {
-    setTimeout(changeColor, 1e3), document.getElementById("preloader").style.display = "none", document.getElementById("content").style.display = "block"
+    setTimeout(changeColor, 1e3), document.getElementById("preloader-container").style.opacity = "0", document.getElementById("preloader").style.display = "none", document.getElementById("content").style.display = "block"
 }
 
-window.onload = function () {    
-    setTimeout(function () {
+window.onload = function() {
+    setTimeout(function() {
         document.getElementById("overlay").style.opacity = "0"
-    }, 500)
+    }, 2e3)
 
     setTimeout(start, 1e3)
 }

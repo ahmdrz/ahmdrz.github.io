@@ -8,7 +8,9 @@ function changeColor() {
 }
 
 function start() {
-    setTimeout(changeColor, 1e3), document.getElementById("preloader-container").style.opacity = "0", document.getElementById("preloader").style.display = "none", document.getElementById("content").style.display = "block"
+    setTimeout(changeColor, 1e3), document.getElementById("preloader-container").style.opacity = "0", setTimeout(function() {
+        document.getElementById("preloader-container").style.display = "none"
+    }, 500), document.getElementById("preloader").style.display = "none", document.getElementById("content").style.display = "block"
 }
 
 window.onload = function() {

@@ -15,6 +15,11 @@
     text-align: center
 }
 
+.storage {
+    text-decoration: none;
+    color: white;
+}
+
 @font-face {
     font-family: 'Dancing Script';
     font-style: normal;

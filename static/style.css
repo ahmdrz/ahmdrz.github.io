@@ -6298,3 +6298,7 @@ h6 {
 #content-resume p a {
     color: #ddd
 }
+
+.cv-title a {
+    color: #ddd;
+}

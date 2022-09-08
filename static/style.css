@@ -20,22 +20,6 @@
     color: white;
 }
 
-@font-face {
-    font-family: 'Dancing Script';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(fonts/DK0eTGXiZjN6yA8zAEyM2Ud0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
-}
-
 #preloader-container {
     position: relative;
     height: 100%;
@@ -6109,14 +6093,15 @@ html {
 }
 
 #background {
-    background-image: url(background-dark.jpg);
+    /* background-image: url(background-dark.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
+    background-color: #222;
     position: fixed;
     width: 100%;
     z-index: -1;
@@ -6136,14 +6121,15 @@ body {
     opacity: 1;
     height: 100%;
     width: 100%;
-    background-image: url(background-light.jpg);
+    background-color: #444;
+    /* background-image: url(background-light.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
 }
 
 .center-box {
@@ -6152,7 +6138,8 @@ body {
     margin: 20px auto;
     background-color: transparent;
     padding: 20px;
-    font-family: Open Sans;
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
     font-size: 1em;
     display: block;
     transform: translate(-50%, -50%)
@@ -6161,8 +6148,7 @@ body {
 .center-box h1 {
     margin-bottom: 0;
     display: inline-block;
-    font-family: Dancing Script;
-    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
     font-size: 4em;
     padding-bottom: 8px;
     padding-top: 8px
@@ -6180,13 +6166,13 @@ h6 {
 }
 
 .center-box h4 a {
-    color: #ccc;
-    opacity: 1
+    color: #fff;
+    opacity: 1;
 }
 
 .center-box h4 a:hover {
     opacity: 1;
-    color: #b80e0e
+    color: #FFF;
 }
 
 .center-box img {
@@ -6301,4 +6287,11 @@ h6 {
 
 .cv-title a {
     color: #ddd;
+    margin-bottom: 5px;
+}
+
+.cv-title {
+    margin-top: 5px !important;
+    margin-bottom: 2px !important;
+    font-weight: lighter !important;
 }
